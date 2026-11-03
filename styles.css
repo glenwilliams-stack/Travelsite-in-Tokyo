@@ -1,0 +1,143 @@
+
+body {
+  background-color: aliceblue;
+color: rgb(0, 0, 0);
+  font-family: "Aladin", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  font-size: larger;
+  line-height: 1.6;
+  h2 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+}
+
+#about {
+  text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+
+  .image img {
+    width: 650px;
+  }
+
+header {
+  color: rgb(35, 11, 61);
+  background-color: goldenrod;
+  text-align: center;
+  gap: 20px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border-color: rgb(223, 195, 36);
+  border-bottom: 3px solid #17252a;
+  p {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+}
+
+header h1 {
+  font-size: 250%;
+}
+
+a {
+  text-decoration: underline;
+  font-size: medium;
+}
+
+footer {
+  background-color: rgb(216, 178, 10); 
+  text-align: center;
+  padding: 20px 0px;
+  border-top: 3px solid rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+ .photo-gallery-section h2 {
+  background-color: cadetblue;
+  text-align: center;
+  padding: 2%;
+  flex: 1;
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: 1px solid #c8e6c9;
+  border-left: 6px solid #17252a;
+}
+
+.why-visit-tokyo h2{
+  text-align: center;
+  margin-top: 0;
+}
+
+.why-visit-tokyo {
+  width: 100%;
+  table-layout: auto;
+  background-color: #e8f5e9;
+  border: 2px solid #c8e6c9;
+  padding: 26px;
+  border-radius: 10px;
+  margin: 40px 0;
+  flex-direction: column;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border-left: 6px solid #17252a;
+  line-height: 1.5;
+  flex-wrap: wrap;
+  justify-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.photo-gallery-section {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+  margin-bottom: 12px;
+}
+ 
+a:hover {
+  background-color: #bd422d;
+  color: beige;
+}
+
+@media (max-width: 650px) {
+  .image img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+  flex-direction: column;
+  line-height: 1.5;
+  }
+  header {
+    width: 100vw;
+  }
+.why-visit-tokyo {
+  width: 100vw;
+}
+.photo-gallery-section {
+  width: 100vw;
+}
+footer {
+  width: 105vw;
+}
+}
